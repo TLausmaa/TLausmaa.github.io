@@ -1,0 +1,31 @@
+---
+export interface Props {
+    className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<div class={className + ' sidebar'}>
+    <ul>
+        <!-- <li>Home</li>
+        <li>Articles</li> -->
+    </ul>
+</div>
+
+<style>
+    .sidebar {
+        font-size: 1.5em;
+        text-align: center;
+        color: #4828d5;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    li {
+        margin-bottom: 1rem;
+    }
+</style>

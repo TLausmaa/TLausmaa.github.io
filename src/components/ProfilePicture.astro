@@ -1,0 +1,32 @@
+--- 
+--- 
+<div class="container">
+    <div class="flex-h">
+        <div class="flex-v">
+            <img class="profile-picture" src="photo-cropped.jpg">
+        </div>
+    </div>
+</div>
+<style>
+    .container {
+        background: #f6f6f6;
+        width: 250px;
+        height: 250px;
+        position: relative;
+    }
+    .flex-h {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    .flex-v {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profile-picture {
+        max-width: 200px;
+        border-radius: 50%;
+        height: auto;
+    }
+</style>
