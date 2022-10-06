@@ -50,4 +50,20 @@ import ProfilePicture from '../components/ProfilePicture.astro'
         display: flex;
         gap: 1rem;
     }
+    @media only screen and (max-width: 700px) {
+        .header1 {
+            font-size: 2.5rem;
+        }
+        .header2, .header3 {
+            font-size: 1.5rem;
+        }
+        .contact-details {
+            gap: 0.5rem;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .contact-details {
+            flex-direction: column;
+        }
+    }
 </style>

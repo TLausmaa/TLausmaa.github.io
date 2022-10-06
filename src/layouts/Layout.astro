@@ -53,4 +53,16 @@ const { title } = Astro.props;
 		font-size: 1.7rem;
 		line-height: 1.3em;
 	}
+	@media only screen and (max-width: 850px) {
+		.sidebar {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 700px) {
+		.main-content-container {
+			font-size: 1.2rem;
+			line-height: normal;
+		}
+	}
 </style>

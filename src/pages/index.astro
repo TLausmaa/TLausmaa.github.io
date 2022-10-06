@@ -17,13 +17,13 @@ import Highlight from '../components/Highlight.astro';
 		<div class="job-period">August 2022 - present</div>
 		<div class="key-tech">C#, React, Javascript, SQL, GraphQL</div>
 	</div>
-	<p>Consultant work in the public health care sector.</p>
+	<p class="description">Consultant work in the public health care sector.</p>
 	<div class="job-title">Software Developer, Isolta Oy, Helsinki</div>
 	<div class="job-details-container">
 		<div class="job-period">February 2018 - July 2022</div>
 		<div class="key-tech">React, Typescript, PHP 8, Jest, PHPUnit</div>
 	</div>
-	<p>
+	<p class="description">
 		Part of a small team creating invoicing and accounting software for entrepreneurs.<br/>
 		I took part in creating a new web-based SaaS product using the latest technologies both in 
 		backend and frontend side. I participated in establishing and understanding user stories, customer needs, 
@@ -35,7 +35,7 @@ import Highlight from '../components/Highlight.astro';
 		<div class="job-period">May 2015 - January 2018</div>
 		<div class="key-tech">C#, VB.NET, SQL, Javascript, HTML</div>
 	</div>
-	<p>
+	<p class="description">
 		Developing desktop and web based ERP systems used for procurement, harvesting and 
 		logistics management in forest industry.
 	</p>
@@ -54,6 +54,7 @@ import Highlight from '../components/Highlight.astro';
 	}
 	.job-title {
 		font-weight: 600;
+		font-size: 1.0em;
 	}
 	.job-period {
 		font-size: 0.7em;
@@ -61,5 +62,12 @@ import Highlight from '../components/Highlight.astro';
 	.key-tech {
 		font-size: 0.7em;
 		margin-top: 0;
+	}
+	.description {
+		/* font-weight: lighter; */
+		margin-top: 0.4em;
+		margin-bottom: 1.2em;
+		font-size: 0.9em;
+		/* color: rgb(50, 50, 50); */
 	}
 </style>
