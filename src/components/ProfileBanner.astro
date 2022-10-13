@@ -8,8 +8,10 @@ import ProfilePicture from '../components/ProfilePicture.astro'
         <h1 class="header2">Senior Full Stack Developer</h1>
         <div class="contact-details">
             <div>firstname.lastname@gmail.com</div>
-            <a href="https://www.linkedin.com/in/timo-lausmaa-68b502155/">LinkedIn</a>
-            <div>Helsinki, Finland</div>
+            <div class="secondary-contact-details">
+                <a href="https://www.linkedin.com/in/timo-lausmaa-68b502155/">LinkedIn</a>
+                <div>Helsinki, Finland</div>
+            </div>
         </div>
     </div>
 </div>
@@ -44,6 +46,10 @@ import ProfilePicture from '../components/ProfilePicture.astro'
     .contact-details {
         color: rgb(30, 30, 30);
         margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+    }
+    .secondary-contact-details {
         display: flex;
         gap: 1rem;
     }
