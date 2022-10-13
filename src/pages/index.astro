@@ -4,8 +4,8 @@ import Highlight from '../components/Highlight.astro';
 ---
 
 <Layout title="Timo Lausmaa">
-	<p>
-		Senior developer with 8 years of experience.<br/> I believe the most important qualities 
+	<p class="opening-paragraph">
+		Senior developer with 8 years of experience. I believe the most important qualities 
 		for a developer are to take ownership and to genuinely care. 
 		I bring that to any team I work in and I believe that helps us succeed. 
 		I love learning and developing myself and feel I'm at my best when I can 
@@ -42,6 +42,11 @@ import Highlight from '../components/Highlight.astro';
 </Layout>
 
 <style>
+	@media only screen and (max-width: 700px) {
+		.opening-paragraph {
+			margin-top: 30px;
+		}
+	}
 	.title {
 		font-size: 2.4rem;
 	}
